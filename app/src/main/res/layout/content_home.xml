@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.HomeActivity"
+    android:id="@+id/img_slide"
+    tools:showIn="@layout/app_bar_home">
+
+
+    <RelativeLayout
+    android:id="@+id/news"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/tous_resto"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoStart="true"
+            android:flipInterval="5000">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_resto" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_slider_1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/adb" />
+        </ViewFlipper>
+
+
+</RelativeLayout>
+
+
+<Button
+        android:background="@drawable/shape_default"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/tous_resto"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Tous les restaurnats"
+        />
+    <Button
+        android:id="@+id/autour"
+        android:layout_below="@id/tous_resto"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/shape_default"
+        android:layout_marginTop="30dp"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="restaurnats autours de vous"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CalendarView
+        android:layout_marginTop="55dp"
+        android:id="@+id/simpleCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simpleCalendarView"
+        android:text="Confirmer la date"
+        android:id="@+id/confirm_date_btn"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/register_button"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

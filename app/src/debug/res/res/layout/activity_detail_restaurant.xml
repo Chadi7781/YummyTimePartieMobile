@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/restaurant_nested_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="100dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_alignParentBottom="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                        <ImageView
+                            android:id="@+id/image_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/adb" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/name_description"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+                                        tools:text="Restaurant Cafe Seles" />
+
+                                </LinearLayout>
+                                <!--<android.support.v7.widget.CardView-->
+                                <!--android:id="@+id/rating_card_res"-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:layout_width="32dp"-->
+                                <!--android:layout_height="22dp"-->
+                                <!--app:cardBackgroundColor="@android:color/holo_green_dark"-->
+                                <!--app:cardCornerRadius="2dp"-->
+                                <!--android:layout_margin="1dp">-->
+                                <!--<TextView-->
+                                <!--android:id="@+id/rating_card_text_res"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="4.5"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:textSize="13sp"-->
+                                <!--android:textColor="@android:color/white"/>-->
+                                <!--</android.support.v7.widget.CardView>-->
+                                <ImageView
+                                    android:id="@+id/favorit_resto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/ic_like" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/resto_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="14sp"
+                                tools:text="Sousse" />
+
+                            <TextView
+                                android:id="@+id/resto_adress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="10sp"
+                                tools:text="Bab El Gharbi, Medina, Sousse | Between the Archeological Museum and the Dar Essid Museum, Sousse 4000, Tunisie
+
+" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp">
+
+                                <TextView
+                                    android:id="@+id/resto_cuisine"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="cuisines: Tounsia"
+                                    android:textAllCaps="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/restaurant_page_cuisines"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:text=""
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+
+                                <TextView
+                                    android:id="@+id/text_view_open_now"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ouvert maintentant "
+                                    android:textColor="@color/brightGreen"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text=": 09:00 - 21.00"
+                                    android:textColor="@color/brightGreen"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/restaurant_page_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:id="@+id/details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@android:color/black"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="6">
+
+                            <LinearLayout
+                                android:id="@+id/call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:background="@drawable/button_rounded"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_gravity="center"
+                                        android:src="@mipmap/ic_phone1" />
+                                </android.support.v7.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_marginRight="14dp"
+                                    android:text="Applez nous"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/direction_button_resact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/button_rounded"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_gravity="center"
+                                        android:src="@mipmap/ic_map" />
+                                </android.support.v7.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_marginRight="14dp"
+                                    android:text="Voir Map"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/rec_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/button_rounded"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:layout_gravity="center"
+                                        android:src="@mipmap/ic_warning2" />
+                                </android.support.v7.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_marginRight="14dp"
+                                    android:text="Réclamer"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:weightSum="20">
+
+                        <Button
+                            android:id="@+id/btn_menu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/bg_ui"
+                            android:padding="10dp"
+                            android:text=" Menu"
+                            android:textColor="@color/white" />
+
+                        <Button
+
+                            android:id="@+id/offre_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/bg_ui"
+                            android:padding="10dp"
+                            android:text=" offres"
+                            android:textColor="@color/white" />
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="@android:color/holo_red_dark"
+                            app:tabIndicatorHeight="2dp"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@android:color/holo_red_dark" />
+
+
+                        <LinearLayout
+                            android:id="@+id/res_menu_section"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                app:cardCornerRadius="0dp">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/menu_main_recyclerview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:nestedScrollingEnabled="false" />
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/res_info_section"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_book_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:id="@+id/call_to_action_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="12dp"
+                        android:color="@color/white"
+                        android:src="@mipmap/ic_today_black" />
+
+                    <TextView
+                        android:id="@+id/call_to_action_button_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Réserver table"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbardetail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+        <!--android:background="@color/colorPrimary" />-->
+
+    />
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/photo_view_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/black">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/image_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/photo_view_section_close_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_margin="16dp"/>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

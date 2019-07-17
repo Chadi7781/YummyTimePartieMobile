@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_personne"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_res"
+            android:icon="@mipmap/ic_today_black"
+            android:title="Mes réservations" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@mipmap/ic_notification"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_param"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Parametre de compte" />
+        <item
+            android:id="@+id/nav_dec"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="Deconnexion" />
+    </group>
+
+
+</menu>

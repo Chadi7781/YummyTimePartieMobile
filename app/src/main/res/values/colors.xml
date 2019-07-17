@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#0080FF</color>
+	<color name="colorPrimaryDark">#1E88E5</color>
+	<color name="colorPrimaryLight">#90CAF9</color>
+	<color name="colorAccent">#00C853</color>
+	<color name="success_blue">#0091de</color>
+	<color name="error_red_info">#E21B1B</color>
+	<color name="brightGreen">#00c71c</color>
+	<color name="brightRed">#F44336</color>
+	<color name="HoloOrange">#ffa500</color>
+	<color name="navBackground">#55d4e7e1</color>
+	<color name="colorwhitetransparent">#00FFFFFF </color>
+</resources>
